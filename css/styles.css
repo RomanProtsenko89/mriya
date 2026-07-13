@@ -34,7 +34,7 @@ img {
     
 }
 .header {
-    background-color: #D4A017;
+    background-color: #F5EEDC;
 }
 
 .container {
@@ -81,11 +81,61 @@ img {
 
 .main {}
 
-.hero {}
+.hero {
+    min-height: 100vh;
+        background: url("../img/hero.webp") center center / cover no-repeat;
+}
+.hero-title span {
+    display: block;
+}
+.hero-content {
+    padding-top: 80px;
+}
+
+.hero-title {
+    font-size: 72px;
+    line-height: 1.08;
+    font-weight: 700;
+    max-width: 650px;
+}
+.advantages {
+    display: flex;
+    gap: 30px;
+    margin-top: 300px;
+    /* было 80px */
+}
+
+.advantages-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+}
+
+.advantages-item img {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 20px;
+}
+
+.advantages-item h2 {
+    color: #2A2A2A;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.advantages-item svg {
+    stroke: #B08A4A;
+}
 
 
 
-.products {}
+
+
+
 
 .products-title {
     font-size: 36px;
@@ -94,23 +144,56 @@ img {
 }
 
 
-.products {}
+.products {
+    padding-bottom: 200px;
+    background-image: url("../img/products.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .container {}
 
-.products-title {}
+.products-title {
+    margin-bottom: 50px;
+        margin-top: 0;
+
+}
 
 .products-list {
-    display: flex;
-    gap: 80px;
-    /* расстояние между фотографиями */
-    justify-content: center;
-    /* расположить по центру */}
+    display: grid;
+        grid-template-columns: repeat(3, 264px);
+        gap: 60px 180px;
+        justify-content: center;
+    }
 
 .product-item {
     flex-shrink: 0;}
 
 .product-item img {
-            object-fit: cover;
-            border-radius: 16px;
+            display: block;
+                border-radius: 16px;
+                object-fit: cover;
         }
+.btn-more {
+             display: block;
+             width: fit-content;
+             margin: 70px auto 0;
+             padding: 16px 36px;
+             background-color: #B08A4A;
+             color: #fff;
+             font-size: 18px;
+             font-weight: 600;
+             border-radius: 14px;
+             transition: all .3s ease;
+                        }
+        
+.btn-more:hover {
+            background-color: #9C763B;
+            transform: translateY(-3px);
+                }
+.products-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
