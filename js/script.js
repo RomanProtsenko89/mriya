@@ -85,3 +85,15 @@ modal.addEventListener("touchend", (e) => {
 
   if (endX - startX > 50) prevImage();
 });
+
+VanillaTilt.init(document.querySelectorAll(".product-item, .portfolio-item"), {
+  max: 22,
+  speed: 500,
+  perspective: 1600,
+  scale: 1.08,
+  glare: true,
+  "max-glare": 0.35,
+  gyroscope: true,
+  reset: true,
+  easing: "cubic-bezier(.03,.98,.52,.99)",
+});

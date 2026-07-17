@@ -161,8 +161,44 @@ img {
         justify-content: center;
     }
 
-.product-item {
-    }
+.product-item,
+.portfolio-item {
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    transform-style: preserve-3d;
+
+    will-change: transform;
+
+    transition:
+        box-shadow .25s;
+
+}
+
+.product-item:hover,
+.portfolio-item:hover {
+
+    box-shadow:
+        0 20px 55px rgba(0, 0, 0, .22);
+
+}
+
+.product-item img,
+.portfolio-item img {
+
+    width: 100%;
+
+    display: block;
+
+    border-radius: 18px;
+
+    pointer-events: none;
+
+    user-select: none;
+
+}
 
 .product-item img {
     display: block;
@@ -172,9 +208,7 @@ img {
     cursor: pointer;
 }
 
-.product-item img:hover {
-    transform: scale(1.04);
-}
+
 .btn-more {
              display: block;
              width: fit-content;
@@ -521,11 +555,10 @@ img {
     cursor: pointer;
 }
 
-.portfolio-item img:hover {
-    transform: scale(1.04);
+
 
     
-}
+
 
 /* ================= TABLETS ================= */
 
