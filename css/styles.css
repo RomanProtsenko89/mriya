@@ -119,9 +119,9 @@ img {
     margin-bottom: 20px;
 }
 
-.advantages-item h2 {
-    color: #2A2A2A;
+.advantages-item p {
     margin: 0;
+    color: #2A2A2A;
     text-align: center;
     font-size: 20px;
     font-weight: 500;
@@ -133,15 +133,11 @@ img {
 }
 
 
-
-
-
-
-
 .products-title {
     font-size: 36px;
-        font-weight: 700;
-        text-align: center;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 50px;
 }
 
 
@@ -156,11 +152,7 @@ img {
 
 .container {}
 
-.products-title {
-    margin-bottom: 50px;
-        margin-top: 0;
 
-}
 
 .products-list {
     display: grid;
@@ -170,7 +162,7 @@ img {
     }
 
 .product-item {
-    flex-shrink: 0;}
+    }
 
 .product-item img {
     display: block;
@@ -417,6 +409,7 @@ img {
     .advantages-item {
         width: 140px;
     }
+        
 
     /* PRODUCTS */
 
@@ -466,9 +459,7 @@ img {
         gap: 50px;
     }
 
-    .footer-divider {
-        display: none;
-    }
+    
 
     .footer-social {
         flex-wrap: wrap;
