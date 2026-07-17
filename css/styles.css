@@ -194,7 +194,7 @@ img {
 
     border-radius: 18px;
 
-    pointer-events: none;
+    pointer-events: auto;
 
     user-select: none;
 
